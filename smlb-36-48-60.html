@@ -2,4 +2,445 @@
 <head>
 <title>SM-LB36 / SM-LB48 / SM-LB60 | MUGS-ZOJIRUSHI THAILAND</title>
 </head>
+<style>
+body {
+		width:100%;
+		height: 100%;
+		margin:0 auto;
+
+	}
+	.header {
+		background-color:#9bf2e6;
+		padding:15px;
+		text-align: center;
+	}
+	.imgcenter {
+		display:block;
+		margin-left:auto;
+		margin-right: auto;
+		width: 25%;
+	}
+	/* Link of list [navbar]*/
+	ul {
+		list-style-type:none;
+		font-family: arial;
+		padding:0;
+		margin:0;
+		overflow:hidden;
+		background-color:lightblue;
+
+	}
+	
+	li {
+		float:left;
+
+
+	}
+	li a {
+		display: inline-block;
+		color:#0056b3;
+		text-align: center;
+		margin-left:160px;
+
+		padding:15px;
+		text-decoration: none;
+		font-size:20px;
+		border-radius: 5px;
+	}
+	li a:hover, a:active {
+		background: pink;
+		border-radius: 5px; 
+		color:#21a895;
+	}
+	
+	}
+	/* DropDown  Menu*/ 
+	li a, .dropbtn{
+		display:inline-block;
+		color:white;
+		text-align: center;
+		margin-left: 80px;
+		padding:20px 21px;
+		text-decoration: none;
+		font-size:20px;
+		border-radius: 5px;
+	}
+	li a:hover, .dropdown:hover .dropbtn{
+		background-color:#F5F5F5;
+		text-decoration:none;
+		display:block;
+		margin-top:0;
+	}
+	li.dropdown {
+		display:inline-block;
+		 
+	}
+	/* End of menu */
+	
+	.dropdown-content {
+		display:none;	
+		position:absolute;
+		background-color:#f1f1f1;
+		z-index:1;
+		border-radius: 5px;
+		 
+	}
+	.dropdown-content a {
+		color:darkcyan;
+		/* padding:12px 25px; */ 
+		font-size:16px;
+		text-decoration:none;
+		display: block;
+		
+	}
+	.dropdown-content a:hover {
+		background-color: #ffe6e6;}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	} 
+
+	/* End of Dropdown Content*/
+
+	.producthover:hover {
+	box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	#width {
+		width: 320px;
+		height: 150px;
+	}
+	/* Home */
+	a.active {
+		background-color:#F5F5F5;
+		color:#21a895;
+	}
+	/* Footer */ 
+	.footer {		
+		background-color:dodgerblue;
+		text-align: center;
+		padding:1px;
+		bottom : 0;
+		padding:1px;
+}
+
+.piccenter {
+	display: block;
+}
+
+.about {
+	background-color:#feecf7;
+	/*background-size:240px 145px;*/
+	/*opacity:0.8;*/
+	/* margin-left: 160px;	
+	margin-right: 140px; */
+	font-size:30px;
+	padding:5px;
+	font-family: arial;
+	color:#248cd6;
+	clear:right;
+}
+
+.para1 {
+	margin-left:160px;
+}
+
+.para2 {
+	color:#248cd6;
+	font-size:25px;
+	font-family: arial;
+}
+.hr1 {
+	/*margin-left: 140px;
+	margin-right:120px;*/
+	background-color:#3412e2;
+	margin-right: 5px;
+	margin-left: 5px;
+	height:1px;
+	border: 0;
+}
+/* Modal Image */
+/* Modal Image */
+/* Modal Image */
+/* Modal Image */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 160px;
+    width: 40%;
+    float:left;
+    padding:5px;
+    
+}
+
+#myImg:hover {opacity: 0.8;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 57%;
+    /*max-width: 700px;*/
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/* Modal Image */
+/* Modal Image */
+/* Modal Image */
+
+
+
+
+.rightside {
+	background-color: #feecf7;
+	font-size: 23px;
+	float:left;
+	padding:5px;
+	margin-right:140px;
+	width: 440px;
+	color:#0c5c96;
+}
+
+.rightsidelink {
+	text-decoration: none;
+	color:#0c5c96;
+}
+.rightsidelink:hover {
+	text-decoration: underline;
+}
+
+</style>
+<body style="background-color:white">
+	<div class="header">
+		<img src="logo.png" alt="UZ" class="imgcenter">
+	</div>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown"> <a href="javascript:void(0)" class="dropbtn active">Product</a>
+			<div class="dropdown-content">
+				<a href="mugs.html">Mugs</a>
+				<a href="botttle-with-cup.html">Bottle With Cup</a>
+				<a href="forkids.html">For Kids</a>
+				<a href="coolbottle.html">Cool Bottles</a>
+				<a href="tumbler.html">Tumbler</a>
+				<a href="foodjars.html">Food Jars</a>
+				<a href="lunchjars.html">Lunch Jars</a>
+				<a href="handypots.html">Handy Pots</a>
+				<a href="airpots.html">Air Pots</a>
+		</div>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</li>
+</ul>
+<br>
+<div class="about">
+	<p class="para1"><img src="b-producticon.png" width="1.5%">  SM-LB36 / SM-LB48 / SM-LB60 </p>
+	<br>
+</div><br>
+
+
+<img id="myImg" src="mugs/1smlb/smlb_modal.jpg" alt="SMLB">
+
+<!-- The Modal -->
+<!-- The Modal -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<!-- The Modal --><!-- The Modal -->
+<!-- The Modal -->
+<!-- The Modal -->
+<!-- The Modal -->
+<!-- The Modal -->
+
+<div class="rightside">
+	<p>Twist Open</p>
+	<p>ฝาหมุนสแตนดาร์ด</p><hr class="hr1">
+	<a href="smed-20-30.html" class="rightsidelink"><img src="arrowicon.png" width="17px;" margin="5px;">SM-ED20/SM-ED30</a><br>
+
+	<a href="smed-20-30.html" class="rightsidelink"><img src="arrowicon.png"width="17px;">SM-JE36/SM-JE48</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
