@@ -258,6 +258,54 @@ body {
 	text-decoration: underline;
 }
 
+table {
+		border-collapse:collapse;
+		width:47%;
+	}
+	th, td{
+		padding:5px;
+		border-bottom:1px solid #ddd;
+	}
+	td {
+		font-family: arial;
+		height: 22px;
+		font-size:12px;
+		vertical-align:middle;
+		text-align:left;
+		padding:5px;
+	}
+	tr:nth-child(even) {
+		background-color:lightgray;
+	}
+
+	.icon:hover {
+		width:56%;
+		transition:width 0.5s;
+	}
+	.tooltip {
+		position:relative;
+		display:inline-block;
+		
+	}
+	.tooltip .tooltiptext{
+		visibility:hidden;
+		width: 200px;
+		background-color: #2db5ef;
+		color:white;
+		text-align: center;
+		border-radius:6px;
+		padding:5px 0;
+
+		position:absolute;
+		z-index:1;
+		bottom:100%;
+		left: 50%;
+		margin-left:-110px;
+	}
+	.tooltip:hover .tooltiptext {
+		visibility:visible;
+	}
+
 </style>
 <body style="background-color:white">
 	<div class="header">
@@ -330,11 +378,78 @@ span.onclick = function() {
 <div class="rightside">
 	<p>Twist Open</p>
 	<p>ฝาหมุนสแตนดาร์ด</p><hr class="hr1">
-	<a href="smed-20-30.html" class="rightsidelink"><img src="arrowicon.png" width="17px;" margin="5px;">SM-ED20/SM-ED30</a><br>
+	<a href="smed-20-30.html" class="rightsidelink"><img src="arrowicon.png"width="17px;" margin="5px;">SM-ED20/SM-ED30</a><br>
 
 	<a href="smed-20-30.html" class="rightsidelink"><img src="arrowicon.png"width="17px;">SM-JE36/SM-JE48</a>
+</div>
+
+<p class="rightside">Hover the icon and description will appear.</p><br><br>
+<div class="tooltip" style="margin-left: 60px;">
+<img class="icon" src="icon1.png" width="53%" alt="icon">
+<span class="tooltiptext">Wide Mouth ปากกระติกกว้างบรรจุได้สะดวก</span>
+</div>
+
+<div class="tooltip" style="margin-left: 10px;">
+<img class="icon" src="icon2.png" width="53%" alt="icon">
+<span class="tooltiptext">SLiT น้ำหนักเบา</span>
+</div>
 
 
+
+
+
+
+
+
+
+<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br> 
+<!-- Table -->
+<div style="margin-left: 140px;">
+<table>
+	<tr>
+		<td>Model No.</td>
+		<td>SM-LB36</td>
+		<td>SM-LB48</td>
+		<td>SM-LB60</td>
+	</tr>
+	<tr>
+		<td>Weight</td>
+		<td>0.19 kg</td>
+		<td>0.22 kg</td>
+		<td>0.24 kg</td>
+	</tr>
+	<tr>
+		<td>Unit Size</td>
+		<td>6.5 x 6.5 x 17.5 cm</td>
+		<td>6.5 x 6.5 x 21.5 cm</td>
+		<td>7 x 7 x 24.5 cm</td>
+	</tr>
+	<tr>
+		<td>Retention/Hot</td>
+		<td>86°C@1hr./67°C@6hrs.</td>
+		<td>87°C@1hr./72°C@6hrs.</td>
+		<td>88°C@1hr./74°C@6hrs.</td>
+	</tr>
+	<tr>
+		<td>Retention/Cold</td>
+		<td>9°C@6hrs.</td>
+		<td>8°C@6hrs</td>
+		<td>8°C@6hrs</td>
+	</tr>
+	<tr>
+		<td>Capacity</td>
+		<td>0.36 L</td>
+		<td>0.48 L</td>
+		<td>0.6 L</td>
+	</tr>
+	<tr>
+		<td>Price</td>
+		<td>1,300 Baht</td>
+		<td>1,400 Baht</td>
+		<td>1,500 Baht</td>
+	</tr>
+</table>
 </div>
 
 
@@ -443,4 +558,5 @@ span.onclick = function() {
 
 
 
+</body>
 </html>
